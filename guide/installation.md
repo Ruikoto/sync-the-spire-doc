@@ -1,0 +1,15 @@
+# 下载安装
+
+## 方式一：Microsoft Store <Badge type="tip" text="推荐" />
+
+从 Microsoft Store 下载安装，支持自动更新，使用更加方便。
+
+## 方式二：手动下载
+
+前往 [GitHub Releases](https://github.com/Ruikoto/sync-the-spire/releases) 下载最新版本，解压即用，无需安装。
+
+## 系统要求
+
+- **操作系统：** Windows 10 / 11
+- **运行时：** 无需额外安装（已内置）
+- **网络：** 需要能访问 Git 远程仓库（GitHub / Gitee 等）

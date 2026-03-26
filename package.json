@@ -1,0 +1,16 @@
+{
+  "name": "sync-the-spire-doc",
+  "version": "0.0.1",
+  "description": "Sync the Spire 文档",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.31"
+  }
+}
