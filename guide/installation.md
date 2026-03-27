@@ -4,9 +4,15 @@
 
 从 Microsoft Store 下载安装，支持自动更新，使用更加方便。
 
-<a href="https://apps.microsoft.com/detail/9PC112T0C074">
-  <img src="/ms-store-badge.svg" class="no-zoom" alt="从 Microsoft Store 获取" width="200" />
-</a>
+<ms-store-badge
+  productid="9pc112t0c074"
+  productname="Sync the Spire"
+  window-mode="direct"
+  theme="auto"
+  size="large"
+  language="zh-cn"
+  animation="on">
+</ms-store-badge>
 
 ## 方式二：手动下载
 

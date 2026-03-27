@@ -22,7 +22,15 @@ export default defineConfig({
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:title', content: 'Sync the Spire' }],
     ['meta', { name: 'og:description', content: '一键同步《杀戮尖塔2》Mod 配置，和朋友用同一套 Mod 联机。' }],
+    ['script', { type: 'module', src: 'https://get.microsoft.com/badge/ms-store-badge.bundled.js' }],
   ],
+
+  markdown: {
+    externalLinks: {
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    },
+  },
 
   themeConfig: {
     logo: '/logo.png',
