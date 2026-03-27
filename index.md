@@ -40,15 +40,12 @@ features:
     details: 跟随房主时自动检查是否包含NSFW Mod并提示，防止社死。
 ---
 
-<div style="padding: 48px 24px 64px; text-align: center;">
-
-<p style="font-size: 14px; color: var(--vp-c-text-2); margin-bottom: 24px; letter-spacing: 0.05em; text-transform: uppercase;">应用预览</p>
-
-<img src="/Screenshot1.png" alt="主界面" style="border-radius: 12px; box-shadow: 0 8px 48px rgba(0,0,0,0.35); max-width: 560px; width: 100%;" />
-
-<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-top: 20px;">
-  <img src="/Screenshot2.png" alt="分支列表" style="border-radius: 10px; box-shadow: 0 4px 24px rgba(0,0,0,0.3); width: calc(50% - 8px); max-width: 340px;" />
-  <img src="/Screenshot3.png" alt="Mod 预览" style="border-radius: 10px; box-shadow: 0 4px 24px rgba(0,0,0,0.3); width: calc(50% - 8px); max-width: 340px;" />
-</div>
-
+<div style="padding: 64px 24px;">
+  <div style="max-width: 600px; margin: 0 auto;">
+    <img src="/Screenshot1.png" alt="主界面" style="display: block; width: 100%; border-radius: 12px; box-shadow: 0 8px 40px rgba(0,0,0,0.4);" />
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px;">
+      <img src="/Screenshot2.png" alt="分支列表" style="display: block; width: 100%; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" />
+      <img src="/Screenshot3.png" alt="Mod 预览" style="display: block; width: 100%; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" />
+    </div>
+  </div>
 </div>
