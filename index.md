@@ -6,7 +6,7 @@ hero:
   text: Mod 同步器
   tagline: 基于Git实现，一键同步《杀戮尖塔2》Mod 配置，和朋友用同一套 Mod 联机。
   image:
-    src: /logo.png
+    src: /Screenshot1.png
     alt: Sync the Spire
   actions:
     - theme: brand
