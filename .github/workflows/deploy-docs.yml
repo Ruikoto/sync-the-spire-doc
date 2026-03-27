@@ -48,12 +48,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # replace doc dir only, leave root-level files untouched
-          rm -rf sync-the-spire
-          mkdir -p sync-the-spire
-          cp -r "../${DOC_DIR}/." sync-the-spire/
+          # overwrite doc files in-place; version.json/announcements.json won't be touched
+          # since VitePress never outputs them
+          cp -r "../${DOC_DIR}/." .
 
-          git add sync-the-spire
+          git add .
           git diff --cached --quiet && echo "No changes to deploy" && exit 0
           git commit -m "docs: update site"
           git push "$REMOTE" gh-pages

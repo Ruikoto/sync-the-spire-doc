@@ -5,9 +5,6 @@ export default defineConfig({
   title: 'Sync the Spire',
   description: '一键同步《杀戮尖塔2》Mod 配置，和朋友用同一套 Mod 联机。',
 
-  // Deploy to GitHub Pages under /sync-the-spire/
-  base: '/sync-the-spire/',
-
   // Cleaner URLs: /guide instead of /guide.html
   cleanUrls: true,
 
@@ -20,7 +17,7 @@ export default defineConfig({
 
   // Page metadata
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/sync-the-spire/logo.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
     ['meta', { name: 'theme-color', content: '#646cff' }],
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:title', content: 'Sync the Spire' }],
