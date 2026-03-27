@@ -1,0 +1,5 @@
+/* ms-store badge light/dark switching */
+.ms-store-badge-dark { display: none; }
+.ms-store-badge-light { display: inline-block; }
+html.dark .ms-store-badge-dark { display: inline-block; }
+html.dark .ms-store-badge-light { display: none; }

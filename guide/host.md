@@ -2,7 +2,7 @@
 
 作为房主，你负责维护和上传 Mod 配置，其他人从你这里同步。
 
-![主界面](/Screenshot1.png)
+![主界面](/images/Screenshot1.png)
 
 ## 操作步骤
 

@@ -48,11 +48,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # overwrite doc files in-place; version.json/announcements.json won't be touched
-          # since VitePress never outputs them
+          # clean up old doc files, preserve API assets managed by other workflows
+          find . -maxdepth 1 ! -name '.' ! -name '.git' ! -name 'version.json' ! -name 'announcements.json' ! -name '_headers' -exec rm -rf {} +
+
+          # copy fresh VitePress build output
           cp -r "../${DOC_DIR}/." .
 
-          git add .
+          git add -A
           git diff --cached --quiet && echo "No changes to deploy" && exit 0
           git commit -m "docs: update site"
           git push "$REMOTE" gh-pages

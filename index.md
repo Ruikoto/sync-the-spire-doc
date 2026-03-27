@@ -42,10 +42,10 @@ features:
 
 <div style="padding: 64px 24px;">
   <div style="max-width: 600px; margin: 0 auto;">
-    <img src="/Screenshot1.png" data-zoomable alt="主界面" style="display: block; width: 100%; border-radius: 12px; box-shadow: 0 8px 40px rgba(0,0,0,0.4);" />
+    <img src="/images/Screenshot1.png" data-zoomable alt="主界面" style="display: block; width: 100%; border-radius: 12px; box-shadow: 0 8px 40px rgba(0,0,0,0.4);" />
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px;">
-      <img src="/Screenshot2.png" data-zoomable alt="分支列表" style="display: block; width: 100%; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" />
-      <img src="/Screenshot3.png" data-zoomable alt="Mod 预览" style="display: block; width: 100%; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" />
+      <img src="/images/Screenshot2.png" data-zoomable alt="分支列表" style="display: block; width: 100%; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" />
+      <img src="/images/Screenshot3.png" data-zoomable alt="Mod 预览" style="display: block; width: 100%; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" />
     </div>
   </div>
 </div>

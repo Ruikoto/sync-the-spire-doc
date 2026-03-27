@@ -6,11 +6,11 @@
 
 1. 点击「**切换分支**」，在分支列表中选择房主的分支
 
-![分支列表](/Screenshot2.png)
+![分支列表](/images/Screenshot2.png)
 
 2. 点击进入后可以预览该分支包含的所有 Mod，确认无误后点击「**同步此分支**」
 
-![Mod 预览](/Screenshot3.png)
+![Mod 预览](/images/Screenshot3.png)
 
 3. 同步完成，直接开游戏
 
