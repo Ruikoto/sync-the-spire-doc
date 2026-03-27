@@ -33,7 +33,7 @@ export default defineConfig({
       { text: '更新日志', link: '/changelog' },
       {
         text: '下载',
-        link: 'https://github.com/Ruikoto/sync-the-spire/releases',
+        link: '/guide/installation',
       },
     ],
 

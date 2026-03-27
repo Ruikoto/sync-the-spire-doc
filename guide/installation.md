@@ -4,6 +4,10 @@
 
 从 Microsoft Store 下载安装，支持自动更新，使用更加方便。
 
+<a href="https://apps.microsoft.com/detail/9PC112T0C074">
+  <img src="https://get.microsoft.com/images/zh-CN%20dark.svg" alt="从 Microsoft Store 获取" width="200" />
+</a>
+
 ## 方式二：手动下载
 
 前往 [GitHub Releases](https://github.com/Ruikoto/sync-the-spire/releases) 下载最新版本，解压即用，无需安装。
