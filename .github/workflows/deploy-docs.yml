@@ -1,0 +1,59 @@
+name: Deploy Docs
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout doc repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install & Build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy to gh-pages
+        env:
+          TARGET_REPO: Ruikoto/sync-the-spire
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        run: |
+          REMOTE="https://x-access-token:${DEPLOY_TOKEN}@github.com/${TARGET_REPO}.git"
+          DOC_DIR=".vitepress/dist"
+
+          # clone existing gh-pages to preserve version.json, announcements.json, etc.
+          git clone --branch gh-pages --single-branch "$REMOTE" pages_output || {
+            mkdir -p pages_output && cd pages_output
+            git init
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git checkout -b gh-pages
+            cd ..
+          }
+
+          cd pages_output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # replace doc dir only, leave root-level files untouched
+          rm -rf sync-the-spire
+          mkdir -p sync-the-spire
+          cp -r "../${DOC_DIR}/." sync-the-spire/
+
+          git add sync-the-spire
+          git diff --cached --quiet && echo "No changes to deploy" && exit 0
+          git commit -m "docs: update site"
+          git push "$REMOTE" gh-pages
