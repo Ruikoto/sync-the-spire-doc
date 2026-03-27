@@ -12,7 +12,7 @@ export default {
     const initZoom = () => {
       // .vp-doc img  — markdown images in all doc pages
       // [data-zoomable] — manually tagged images (e.g. homepage HTML)
-      mediumZoom('.vp-doc img, [data-zoomable]', {
+      mediumZoom('.vp-doc img:not(.no-zoom), [data-zoomable]', {
         background: 'var(--vp-c-bg)',
       })
     }
