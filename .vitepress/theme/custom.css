@@ -3,3 +3,21 @@
 .ms-store-badge-light { display: inline-block; }
 html.dark .ms-store-badge-dark { display: inline-block; }
 html.dark .ms-store-badge-light { display: none; }
+
+/* ensure zoomed image renders above the sidebar */
+.medium-zoom-overlay,
+.medium-zoom-image--opened {
+  z-index: 10000;
+}
+
+/* uniform rounded corners and shadow for all content images */
+.vp-doc img:not(.no-zoom),
+[data-zoomable] {
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+html.dark .vp-doc img:not(.no-zoom),
+html.dark [data-zoomable] {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+}
