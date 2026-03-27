@@ -65,7 +65,7 @@ export default defineConfig({
 
     footer: {
       message: '基于 MIT 许可发布',
-      copyright: '© 2025-present Sync the Spire Contributors',
+      copyright: '© 2026 Ruikoto',
     },
 
     search: {
