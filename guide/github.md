@@ -18,12 +18,22 @@
 
 4. 仓库创建后，复制页面上的 HTTPS 地址（格式为 `https://github.com/用户名/仓库名.git`）。
 
-## 2. 创建 Personal Access Token
+## 2. 认证方式与 Token 配置
 
-GitHub 不支持直接用密码推送，需要创建一个 Personal Access Token (PAT) 替代密码。
+### 认证方式
+
+| 方式 | 说明 |
+|------|------|
+| **免密** | 仅适用于 Public 仓库，推送时弹出浏览器授权 |
+| **HTTPS**（推荐） | 适用于所有仓库，需要用户名 + Personal Access Token |
+| **SSH** | 已配置 SSH 密钥的用户可使用 |
+
+### 创建 Personal Access Token
+
+如果使用 HTTPS 认证（推荐），需要创建一个 Personal Access Token (PAT) 替代密码。
 
 ::: tip 公开仓库 + 免密
-如果你的仓库是 **Public**，可以跳过此步骤，直接使用「免密」认证方式（仅限推送时弹出浏览器授权的场景）。但私有仓库必须配置 Token。
+如果你的仓库是 **Public**，可以跳过此步骤，直接使用「免密」认证方式。但私有仓库必须配置 Token。
 :::
 
 5. 点击右上角头像 →「**Settings**」→ 左侧栏最底部「**Developer settings**」→「**Personal access tokens**」→「**Tokens (classic)**」→「**Generate new token (classic)**」。
