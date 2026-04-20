@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'zh-CN',
   title: 'Sync the Spire',
-  description: '一键同步《杀戮尖塔2》Mod 配置，和朋友用同一套 Mod 联机。',
+  description: '一键同步游戏 Mod 配置，和朋友用同一套 Mod 联机。支持杀戮尖塔 2 等多款游戏。',
 
   // Cleaner URLs: /guide instead of /guide.html
   cleanUrls: true,
@@ -21,7 +21,7 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#646cff' }],
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:title', content: 'Sync the Spire' }],
-    ['meta', { name: 'og:description', content: '一键同步《杀戮尖塔2》Mod 配置，和朋友用同一套 Mod 联机。' }],
+    ['meta', { name: 'og:description', content: '一键同步游戏 Mod 配置，和朋友用同一套 Mod 联机。' }],
   ],
 
   markdown: {
@@ -63,9 +63,10 @@ export default defineConfig({
         {
           text: '使用指南',
           items: [
+            { text: '多工作区', link: '/guide/workspace' },
             { text: '做房主', link: '/guide/host' },
             { text: '跟随别人', link: '/guide/join' },
-            { text: 'Mod 开关', link: '/guide/mod-toggle' },
+            { text: 'Mod 管理', link: '/guide/mod-manager' },
             { text: '存档重定向', link: '/guide/save-redirect' },
             { text: '存档备份', link: '/guide/save-backup' },
           ],

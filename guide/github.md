@@ -77,14 +77,14 @@
 
 ## 3. 配置 Sync the Spire
 
-11. 打开 Sync the Spire，在配置页面依次填写：
+11. 打开 Sync the Spire，[创建一个工作区](/guide/workspace)后进入配置页面，依次填写：
     - **远程仓库 URL**：粘贴第 4 步复制的仓库地址
     - **用户昵称**：随意填写，用于区分不同设备/玩家
     - **鉴权方式**：选择「**HTTPS**」，然后填入你的 **GitHub 用户名**和刚才生成的 **Token**（作为密码）
-    - **游戏安装路径** / **存档路径**：手动填写或点击「自动查找」
+    - **游戏安装路径** / **存档路径**：手动填写或点击「**自动查找**」
     - 确认无误后，点击「**保存并初始化**」
 
-    ![Sync the Spire 配置页](/images/git-remote-guide/config-page.png)
+    ![Sync the Spire 配置页](/images/v2-setup-https.png)
 
 ## 4. 邀请队友
 
@@ -92,4 +92,4 @@
 
     ![邀请协作者](/images/git-remote-guide/github-10.png)
 
-13. 朋友接受邀请后，需要各自创建自己的 PAT（重复第 5–10 步），然后在 Sync the Spire 中填入**同一个仓库地址** + **自己的**用户名和 Token 即可。
+13. 朋友接受邀请后，需要各自创建自己的 PAT（重复第 5–10 步），然后在 Sync the Spire 中创建工作区，填入**同一个仓库地址** + **自己的**用户名和 Token 即可。
