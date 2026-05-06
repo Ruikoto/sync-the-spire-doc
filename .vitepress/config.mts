@@ -56,6 +56,7 @@ export default defineConfig({
         {
           text: '配置远程仓库',
           items: [
+            { text: 'AtomGit 配置指南', link: '/guide/atomgit' },
             { text: 'Gitee 配置指南', link: '/guide/gitee' },
             { text: 'GitHub 配置指南', link: '/guide/github' },
           ],
