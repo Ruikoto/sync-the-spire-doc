@@ -80,7 +80,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: '基于 MIT 许可发布',
+      message: '基于 MIT 许可发布 · <a href="/acknowledgments">鸣谢开源项目</a>',
       copyright: '© 2026 Ruikoto',
     },
 
